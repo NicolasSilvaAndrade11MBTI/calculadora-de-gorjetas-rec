@@ -26,6 +26,7 @@
                     <label for="outra">Selecione a gorjeta %</label>
 
                     <div>
+                        
                         <input type="button" value="5%">
                         <input type="button" value="10%" >
                         <input type="button" value="15%">
@@ -36,9 +37,11 @@
                 </div>
 
                 <div class="pessoas">
-                    <label for="pessoas">Quantidade de pessoas</label>
-                    <p id="erro">Não pode ser 0</p>
-                    <div>
+                    <div class="textos">
+                        <label for="pessoas">Quantidade de pessoas</label>
+                        <p id="erro">Não pode ser 0</p>
+                    </div>
+                    <div class="input-box">
                         <img src="./images/icon-person.svg" alt="icone da pessoa">
                         <input type="number" name="pessoas" id="pessoas" placeholder="0">
                 </div>
@@ -46,25 +49,25 @@
         </section>
         <section class="resultados">
             <div>
-                <div class="gorjeta-total">
-
-                    <p>
-                        <strong>Gorjeta</strong> <br>
-                        / Pessoa
-                    </p>
-                    <strong>R$0.00</strong>
-                </div>
-        
-                <div class="total">
-        
-                    <p>
-                        <strong>Total</strong> <br>
-                        / Pessoa
-                    </p>
-                    <strong>R$0.00</strong>
-                </div>
+                <p>
+                    <strong>Gorjeta</strong> <br>
+                    / Pessoa
+                </p>
+                <strong>$0.00</strong>
             </div>
-            
+    
+            <div class="total">
+    
+                <p>
+                    <strong>Total</strong> <br>
+                    / Pessoa
+                </p>
+                <strong>$0.00</strong>
+            </div>
+            </div>
+            <div class="gorjeta-total">
+
+
 
             <button>Limpar</button>
         </section>
