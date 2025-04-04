@@ -60,6 +60,7 @@ main {
     border-radius: 0.3125rem;
 }
 
+
 .conta input,
 .pessoas input {
     border: none;
@@ -76,6 +77,8 @@ main {
 .pessoas input::placeholder{
     color: var(--green-300);
 }
+
+
 
 .conta:has(input:focus) div,
 .conta:has(input:hover div),
@@ -256,3 +259,4 @@ main {
 .resultados div > strong {
     font-size: 3rem;
 }
+

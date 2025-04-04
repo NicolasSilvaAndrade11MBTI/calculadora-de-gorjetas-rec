@@ -1,33 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora de gorjeta</title>
+    <title>Calculadora de Gorjeta</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="./script.js" defer></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header><img src="./images/logo.svg" alt=""></header>
+    <header><img src="./images/logo.svg" alt="Logo"></header>
     <main>
         <section class="informacoes">
             <form action="">
                 <div class="conta"> 
-                    <label for="Conta">conta</label>
+                    <label for="conta">Conta</label>
                     <div>
-                        <img src="./images/icon-dollar.svg" alt="icone de cifrao">
+                        <img src="./images/icon-dollar.svg" alt="Ícone de cifrão">
                         <input type="number" name="conta" id="conta" placeholder="0">
-
                     </div>
                 </div>
-                <div class="gorjeta">
-                    <label for="outra">Selecione a gorjeta %</label>
 
+                <div class="gorjeta">
+                    <label for="Outra">Selecione a gorjeta %</label>
                     <div>
-                        
                         <input type="button" value="5%">
                         <input type="button" value="10%">
                         <input type="button" value="15%">
@@ -43,37 +41,34 @@
                         <p id="erro">Não pode ser 0</p>
                     </div>
                     <div class="input-box">
-                        <img src="./images/icon-person.svg" alt="icone da pessoa">
+                        <img src="./images/icon-person.svg" alt="Ícone da pessoa">
                         <input type="number" name="pessoas" id="pessoas" placeholder="0">
+                    </div>
                 </div>
             </form>
         </section>
+
         <section class="resultados">
             <div>
                 <p>
                     <strong>Gorjeta</strong> <br>
                     / Pessoa
                 </p>
-                <strong>$0.00</strong>
+                <strong id="valor-gorjeta">R$0.00</strong>
             </div>
-    
+
             <div class="total">
-    
                 <p>
                     <strong>Total</strong> <br>
                     / Pessoa
                 </p>
-                <strong>$0.00</strong>
+                <strong id="valor-total">R$0.00</strong>
             </div>
-            </div>
+
             <div class="gorjeta-total">
-
-
-
-            <button>Limpar</button>
+                <button>Limpar</button>
+            </div>
         </section>
-
-        
     </main>
 </body>
 </html>
